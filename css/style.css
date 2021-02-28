@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color: black;
+    flex-direction: column;
+}
+
+.reloj{
+    border: solid 1px #a3a1a1;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#saludo{
+    color: #ededed;
+    position: relative;
+    top: -50px;
+}
+
+.reloj div{
+    font-size: 30px;
+    font-weight: 500;
+    color: #ededed;
+}
+
+.info{
+    display: flex;
+    width: 50%;
+    color: #ededed;
+    justify-content: space-between;
+    margin-top: 50px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 380px){
+    .info{
+        width: 100%;
+        flex-direction: column;
+    }
+    .info div{
+        margin: 10px auto;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .info{
+        width: 100%;
+        flex-direction: column;
+    }
+    .info div{
+        margin: 10px auto;
+        font-size: 20px;
+    }
+}
